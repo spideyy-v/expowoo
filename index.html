@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ExpoWoo | Export Template Button Unhider</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 10px;
+      width: 128px;
+    }
+    h1 {
+      text-align: center;
+      color: #00ffd5;
+    }
+    .description {
+      background: #2c2c2c;
+      padding: 20px;
+      border-radius: 10px;
+      line-height: 1.6;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #444;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      margin-top: 40px;
+      color: #ff7474;
+    }
+    ol {
+      padding-left: 20px;
+    }
+    .download-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .download-buttons a {
+      background-color: white;
+      color: #000;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .download-buttons a:hover {
+      background-color: #00ffd5;
+      color: #000;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="logo.png" alt="Mod Logo" class="logo" />
+
+  <!-- Mod Name -->
+  <h1>ExpoWoo<br>Export World Function to Minecraft PE</h1>
+  <br>
+  <p>Software : <code>Minecraft Pocket/Bedrock Edition</code>
+    <p>Versions : <code>1.21+</code></p>
+
+  <!-- Download Buttons -->
+  <div class="download-buttons">
+    <a href="#" class="cf" target="_blank"><img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/curseforge-1ggrlxplc9gjkajypnzcdh.png/curseforge-vqyvsa5do1rsh8njqkqpam.png?_a=DATAdtXyZAA0" width="20px" alt="Curseforge"> &nbsp;CurseForge</a>
+    <a href="#" class="dl" target="_blank"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIDQgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6IytKRD82QzQtOjcBCgoKDQwNGg8PGjclHyU3Nzc3NzE3Nzg3Nzc3Nzc3NzU3NTc3NzcuNzg3Mi43OC0yODUyMDc1LTU1NzUtLTUrNf/AABEIABwAHAMBEQACEQEDEQH/xAAYAAADAQEAAAAAAAAAAAAAAAADBQYEAv/EACoQAAEDAwIDCAMAAAAAAAAAAAECAwQABREGIRIxcwcUUWGBkbGyEzI2/8QAGgEAAgMBAQAAAAAAAAAAAAAAAQUCAwQABv/EACcRAAICAQIFAwUAAAAAAAAAAAECAAMRBBIFITGxwXGBkTIzNFFh/9oADAMBAAIRAxEAPwBdChyZ8gR2WVvPKBIQgbnFJwpY4E8TXU9rbUGTNE6y3O3tflfgSGW+XGpB4R68qLIyjLCWWaW6oZdcCDm2ybAQ0t+M4yl4ZbKx+w25e4oMjL1EjbRZUAXGMzME1GUyl7N/6yP03Pqa0ab7gjPhX5PsZXTHXZGmtWJccW4GpbyGwtWeFISggDwGTVzkmq3P97Rs5LUXZ/Z7CKe0kZt9g6S/huo6rosxcX+iv38SICdqxRFGmjLjGtV/ZmPqKWUoWCUpJO4wNhV1LhHyZv4fclN25zylLdNR2RFlu0WM7IffuLq3CFt8ISVAA+G2B51bZbXsZV6mML9dpxU6oclvM41JdrDebPGR3iT3yIyQylLZCSohOQcjyrrbKnXrzEhrNRpL6gNx3AcvX4keEbVkiKY0ijJQyBQghkAUIIUAYrp0/9k=" alt="MCPEDL" width="15px"> &nbsp;MCPEDL</a>
+    <a href="#" class="mc" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAOVBMVEUAAAABV6kqVAFXsQ8nju1uwxBXqv89ov9LqP9EgAH///8xmPcNdNMulfQBJkdYrgEBTpYTLi8Odcz22QUHAAAAAXRSTlMAQObYZgAAAMlJREFUeAGtzoEKhCAMgOGZM+2yZff+D3ubKzNKDLgfCOY+TKgyJTh7CYaclVDS+T3IKyeNznnvQ0CcuEIKGLk2kE6AV8C7j1SA9ARcD4yuAE6BMcbayy+0eZ4j3zG8Am7v2IbAH0T8O/BakBRMNfAd4Lk+CJyul2W5vaEJiMiYdV354LhdtzGmYds2AAGIIpxUg0QnYPIIQDKGJz6zR7JVAA3wvQKilJtKOhN1AeztIMYWAJIyG6SkM1QVICIpgFsplwE8RqUK/AAHnxdf668/8AAAAABJRU5ErkJggg==" alt="Planet Minecraft" width="15px"> &nbsp;Planet Minecraft</a>
+    <a href="https://www.mediafire.com/file/umvrckpknc9wx1d/ExpoWoo.mcpack/file" class="mf" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAclBMVEUAd/8Adf8Acf8Ac/8AcP88iv+FsP+bvf+Ptv9fm/8Nev+Is//4+/////+iw/8Abv8tg/8Aa/8AaP9Fj//f6//L3v/s8/+91P+bwP+uyv/z+P91qP8kf/+Wu/9Slf9lnv8AY/9uo/83iP/R4f+wzP/D2P/a/HPVAAAApElEQVR4Ad3PxQGDAAwF0BjOb+rusv+IdZwJeMd4aLhYRJSplwVhFCdm7ZY3SrMcHyPnesrTYCwTn87wNa9lOVjgbblaz/Gz8TIp0wyF7W4fAiiv8sO2zG1MeLIGEv33rQ/H4LQBMD+eP8vkAly0fE5ZpzHeVvuJyHkBXBv3Xm/4ukXxDZhPqI4n1ztKM6UmdhrhJxHqYPPL5rEKRamXmrswDc0L+boK+fEIslcAAAAASUVORK5CYII=" alt="Mediafire" width="15px"> &nbsp;MediaFire</a>
+  </div>
+ <br>
+  <!-- Description -->
+  <div class="description">
+    <p>
+      This resource pack re-enables the hidden <strong>“Export Template”</strong> button within the Minecraft Bedrock Edition (PE) game settings. In newer versions of Minecraft (starting around 1.20+), Mojang removed or hid several developer and advanced tools from the user interface—one of them being the ability to export your world as a <code>.mcworld</code> or <code>.mctemplate</code> file directly from the game. This pack brings that option back for creators, map developers, and anyone who wants to back up or share their world effortlessly.
+    </p>
+
+    <h3 class="section-title">📦 How to Use</h3>
+    <ol>
+      <li>Launch any local world you wish to export.</li>
+      <li>Pause the game and go to <strong>Settings → Game</strong>.</li>
+      <li>Scroll to the bottom of the Game section where you’ll now see a button titled <strong>“Export Template”</strong>.</li>
+      <li>Click it, and choose your file save location.</li>
+      <li>Rename it to something like <code>MyWorld.mcworld</code> or keep it as <code>.mctemplate</code>.</li>
+    </ol>
+
+    <p>
+      This mod doesn’t add any custom blocks, scripts, or gameplay changes. It simply unhides built-in UI elements that are disabled by default on Pocket Edition and certain Bedrock platforms. It’s a lightweight and safe resource pack with no performance impact.
+    </p>
+
+    <p>
+      The exported files can be shared with others or re-imported later, making it great for content creators, multiplayer backups, map editors, and more. No root, scripts, or external tools are required.
+    </p>
+
+    <p><strong>Note:</strong> Works only in local single-player worlds. Make sure your device supports file save dialogs (e.g. Android 11+, Windows 10/11).</p>
+
+    <p><strong>Simple, fast, and functional — this is the easiest way to export your Minecraft PE worlds again.</strong></p>
+  </div>
+
+  <!-- Gallery -->
+  <h2 class="section-title">🖼 Image Gallery</h2>
+  <div class="gallery">
+    <img src="images/screen1.png" alt="Export Button Screenshot">
+    <img src="images/screen2.png" alt="Settings Menu Screenshot">
+    <img src="images/screen3.png" alt="Save Dialog Screenshot">
+    <img src="images/screen4.png" alt="Export Button Screenshot">
+    <img src="images/screen5.png" alt="Settings Menu Screenshot">
+    <img src="images/screen6.png" alt="Save Dialog Screenshot">
+    <img src="images/screen7.png" alt="Export Button Screenshot">
+    <img src="images/screen8.png" alt="Settings Menu Screenshot">
+  </div>
+
+</body>
+</html>
